@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reactor Simulation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="dist/index.js"></script>
+</head>
+
+<body>
+<!-- Language: HTML                                                 -->
+<!-- Path: index.html                                               -->
+<!-- Create a tab bar to select the active pane                     -->
+<div class="tab">
+    <button id="home-btn" class="tab-links">Home</button>
+    <button id="sim-btn" class="tab-links">Simulation</button>
+    <button id="about-btn" class="tab-links">About</button>
+</div>
+<!-- Create a container for each pane                               -->
+<!--                                                                -->
+<!-- HOME tab                                                       -->
+<div id="home-tab" class="tab-content">
+    <h1>Reactor Simulation</h1>
+    <p>
+        This is a simulation of a nuclear reactor. The reactor is a 2D grid of cells, each of which can be either
+        empty, contain a neutron, or contain a fuel pellet. The simulation is run by repeatedly applying the
+        following rules to the grid:
+    </p>
+    <ol>
+        <li>Neutrons move in a random direction.</li>
+        <li>Neutrons are absorbed by fuel pellets.</li>
+        <li>Neutrons are absorbed by empty cells.</li>
+        <li>Neutrons are reflected by the edges of the grid.</li>
+        <li>When a neutron is absorbed by a fuel pellet, the pellet is destroyed and a new neutron is created.</li>
+    </ol>
+    <p>
+        The simulation is run by repeatedly applying the above rules to the grid. The grid is displayed as a
+        table, with each cell represented by a table cell. The table is updated by changing the class of each
+        cell to reflect the state of the corresponding cell in the grid.
+    </p>
+    <p>
+        The simulation is run by repeatedly applying the above rules to the grid. The grid is displayed as a
+        table, with each cell represented by a table cell. The table is updated by changing the class of each
+        cell to reflect the state of the corresponding cell in the grid.
+    </p>
+</div>
+<!--                                                -->
+<!-- Language: HTML                                 -->
+<!-- Path: index.html                               -->
+<!-- SIMULATION tab                                 -->
+<div id="sim-tab">
+    <h1>Simulation</h1>
+    <div id="controls">
+        <button id="new-btn">New</button>
+        <button id="start-btn">Start</button>
+        <button id="stop-btn">Stop</button>
+        <button id="step-btn">Step</button>
+        <button id="reset-btn">Reset</button>
+    </div>
+
+    <!-- GAME BOARD -->
+    <div id="game-board">
+        <table id="grid">
+            <tbody>
+            <tr>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<!--                                        -->
+<!-- Language: HTML                         -->
+<!-- Path: index.html                       -->
+<!-- ABOUT tab                              -->
+<div id="about-tab" class="tab-content">
+    <h1>About</h1>
+    <p>
+        This simulation was created by John Smith as part of the...
+    </p>
+</div>
+
+</body>
+</html>
